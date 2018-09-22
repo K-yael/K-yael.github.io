@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    
-    
+
+
     <!-- firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
@@ -26,7 +26,7 @@
         crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
-        
+
 
 
 
@@ -75,101 +75,101 @@
 </head>
 
 <body class="cover">
-        <div class="content">
-    <!-- navigation bar -->
-    <div id="mySidenav" class="sidenav">
-        <p style="position: absolute; color: whitesmoke; top: 1px; left: 33px; font-size: 34px;">תפריט</p>
-
-        <a href="javascript:void(0)" class="closebtn clickanamation" onclick="closeNav()">&times;</a>
-        <a href="index.html" class="clickanamation visitpage">דף בית</a>
-        <a href="userprofile.html" class="clickanamation">פרופיל</a>
-        <a href="rescu.html" class="clickanamation">תרגולות</a>
-        <a href="generalinfo.html" class="clickanamation">מידע כללי</a>
-        <a href="gant.html" class="clickanamation"> גאנט סגירות</a>
-        <!-- <a href="gantmaster.html" class="clickanamation"> עדכוון גאנט</a> -->
-
-    </div>
-    <!-- navigation bar -->
-
-
-
-    <div class="jumbotron curvy" style="text-align: center; margin-bottom: 0px; background-color:#343a40">
-
+    <div class="content">
         <!-- navigation bar -->
-        <span class="navhamburger clickanamation" onclick="openNav()">&#9776; </span>
+        <div id="mySidenav" class="sidenav">
+            <p style="position: absolute; color: whitesmoke; top: 1px; left: 33px; font-size: 34px;">תפריט</p>
+
+            <a href="javascript:void(0)" class="closebtn clickanamation" onclick="closeNav()">&times;</a>
+            <a href="index.html" class="clickanamation visitpage">דף בית</a>
+            <a href="userprofile.html" class="clickanamation">פרופיל</a>
+            <a href="rescu.html" class="clickanamation">תרגולות</a>
+            <a href="generalinfo.html" class="clickanamation">מידע כללי</a>
+            <a href="gant.html" class="clickanamation"> גאנט סגירות</a>
+            <!-- <a href="gantmaster.html" class="clickanamation"> עדכוון גאנט</a> -->
+
+        </div>
         <!-- navigation bar -->
 
-         <!-- logout -->
-         <i class="fas fa-sign-out-alt clickanamation" style="font-size: 23px; position: absolute;left: 9px; color: #e8edf5;" onclick="logout()"></i>
-         <!-- logout -->
+
+
+        <div class="jumbotron curvy" style="text-align: center; margin-bottom: 0px; background-color:#343a40">
+
+            <!-- navigation bar -->
+            <span class="navhamburger clickanamation" onclick="openNav()">&#9776; </span>
+            <!-- navigation bar -->
+
+            <!-- logout -->
+            <i class="fas fa-sign-out-alt clickanamation" style="font-size: 23px; position: absolute;left: 9px; color: #e8edf5;" onclick="logout()"></i>
+            <!-- logout -->
 
 
 
 
-        <h1 style=" color: #E9EFF6; display: inline-block;"> קריאת יעל</h1>
-       
-        <p style=" color: #f3f3f3; opacity: .6; font-size: 16px; font-weight: 100; margin-bottom: 0rem;">" הרים הגבוהים ליעלים, סלעים מחסה לשפנים "</p>
-    </div>
-    <div class="lds-roller centered" id="loader" style="top: 50%;">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+            <h1 style=" color: #E9EFF6; display: inline-block;"> קריאת יעל</h1>
 
-    <div class="cardbetter" id="readytoload1" style="display: none;">
-        <i id="replace1" class="fas fa-retweet clickanamation" style="font-size: 26px; color: #c1dcffb8; position: absolute; right: 20px; top: 5px;"></i>
-
-        <div class="profile">
-
-            <img src="images/man.png" class="thumbnail">
-
-            <h1 id="name1" class="name"></h1>
-            <p class="title" id="loadcard">מפקד</p>
-            <p id="teamname1" class="title-team"></p>
-            <a href="" class="btn btn-success phone" id="phonenum1"></a>
-
+            <p style=" color: #f3f3f3; opacity: .6; font-size: 16px; font-weight: 100; margin-bottom: 0rem;">" הרים הגבוהים ליעלים, סלעים מחסה לשפנים "</p>
+        </div>
+        <div class="lds-roller centered" id="loader" style="top: 50%;">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
 
-    </div>
-    <div id="readytoloadborder1" class="jborder" style="display: none;"></div>
+        <div class="cardbetter" id="readytoload1" style="display: none;">
+            <i id="replace1" class="fas fa-retweet clickanamation" style="font-size: 26px; color: #c1dcffb8; position: absolute; right: 20px; top: 5px;"></i>
 
+            <div class="profile" id="profile1">
 
-    <div class="cardbetter" id="readytoload2" style="display: none;">
-        <i id="replace2" class="fas fa-retweet clickanamation" style="font-size: 26px; color: #c1dcffb8; position: absolute; right: 20px; top: 5px;"></i>
-        <div class="profile">
+                <img src="images/man.png" class="thumbnail">
 
-            <img src="images/user (3).png" class="thumbnail">
+                <h1 id="name1" class="name"></h1>
+                <p class="title" id="loadcard">מפקד</p>
+                <p id="teamname1" class="title-team"></p>
+                <a href="" class="btn btn-success phone" id="phonenum1"></a>
 
-            <h1 id="name2" class="name"></h1>
-            <p class="title">מגמקיסט</p>
-            <p id="teamname2" class="title-team"></p>
-            <a href="" class="btn btn-success phone" id="phonenum2"></a>
+            </div>
+
         </div>
-    </div>
-    <div id="readytoloadborder2" class="jborder" style="display: none;"></div>
-    <div class="cardbetter" id="readytoload3" style="display: none;">
-        <i id="replace3" class="fas fa-retweet clickanamation" style="font-size: 26px; color: #c1dcffb8; position: absolute; right: 20px; top: 5px;"></i>
-        <!-- fas fa-chevron-circle-left -->
-        <div class="profile">
+        <div id="readytoloadborder1" class="jborder" style="display: none;"></div>
 
-            <img src="images/user (2).png" class="thumbnail">
 
-            <h1 id="name3" class="name"></h1>
-            <p class="title">מעגן</p>
-            <p id="teamname3" class="title-team"></p>
-            <a href="" class="btn btn-success phone" id="phonenum3"></a>
+        <div class="cardbetter" id="readytoload2" style="display: none;">
+            <i id="replace2" class="fas fa-retweet clickanamation" style="font-size: 26px; color: #c1dcffb8; position: absolute; right: 20px; top: 5px;"></i>
+            <div class="profile" id="profile2">
+
+                <img src="images/user (3).png" class="thumbnail">
+
+                <h1 id="name2" class="name"></h1>
+                <p class="title">מגמקיסט</p>
+                <p id="teamname2" class="title-team"></p>
+                <a href="" class="btn btn-success phone" id="phonenum2"></a>
+            </div>
         </div>
-    </div>
+        <div id="readytoloadborder2" class="jborder" style="display: none;"></div>
+        <div class="cardbetter" id="readytoload3" style="display: none;">
+            <i id="replace3" class="fas fa-retweet clickanamation" style="font-size: 26px; color: #c1dcffb8; position: absolute; right: 20px; top: 5px;"></i>
+            <!-- fas fa-chevron-circle-left -->
+            <div class="profile" id="profile3">
+
+                <img src="images/user (2).png" class="thumbnail">
+
+                <h1 id="name3" class="name"></h1>
+                <p class="title">מעגן</p>
+                <p id="teamname3" class="title-team"></p>
+                <a href="" class="btn btn-success phone" id="phonenum3"></a>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="footer" id="footer" style="display: none">
-        <p> תומר למפרט - צוות פקאן &copy;</p>
-    </div>
+            <p> תומר למפרט - צוות פקאן &copy;</p>
+        </div>
     </footer>
 
 
@@ -199,8 +199,10 @@
                         document.getElementById("replace1").addEventListener("click", function () {
 
                             if (konan1.userUID != userid && konan2.userUID != userid && konan3.userUID != userid) {
-
-
+                                var id = "replace1";
+                                greenalert(id)
+                                setTimeout(function () { document.getElementById(id).style.color = "#c1dcffb8"; }, 250);
+                                document.getElementById("profile1").classList.add("profilefade");
                                 replaceKonan(user.userUID, userid);
                             }
                             else {
@@ -229,6 +231,10 @@
 
                             if (konan1.userUID != userid && konan2.userUID != userid && konan3.userUID != userid) {
 
+                                var id = "replace2";
+                                greenalert(id)
+                                setTimeout(function () { document.getElementById(id).style.color = "#c1dcffb8"; }, 250);
+                                document.getElementById("profile2").classList.add("profilefade");
 
                                 replaceKonan(user.userUID, userid);
                             }
@@ -245,6 +251,7 @@
 
                 getUser(konan3.userUID)
                     .then(function (user) {
+                     
                         document.getElementById("readytoload3").style.display = "flex";
                         document.getElementById("name3").innerHTML = user.name;
                         document.getElementById("teamname3").innerHTML = user.team;
@@ -254,8 +261,10 @@
                         document.getElementById("replace3").addEventListener("click", function () {
 
                             if (konan1.userUID != userid && konan2.userUID != userid && konan3.userUID != userid) {
-
-
+                                var id = "replace3";
+                                greenalert(id)
+                                setTimeout(function () { document.getElementById(id).style.color = "#c1dcffb8"; }, 250);
+                               document.getElementById("profile3").classList.add("profilefade");
                                 replaceKonan(user.userUID, userid);
                             }
                             else {
@@ -278,7 +287,11 @@
             document.getElementById(id).style.color = "red";
 
         }
-       
+        function greenalert(id) {
+            document.getElementById(id).style.color = "green";
+
+        }
+
 
 
 

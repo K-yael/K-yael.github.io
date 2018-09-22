@@ -77,6 +77,51 @@ body {
   background-color: #E9EFF6;
   
 }
+.logincls{
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  width: 250px;
+   position: absolute; 
+   top: 50%;
+}
+
+@media screen and (max-width: 320px) {
+  .logincls {
+    top: 55%;
+  }
+}
+.registercls{
+  size: 30%;
+  position: absolute; 
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  width: 250px;
+
+   top: 45%;
+}
+
+@media screen and (max-width: 320px) {
+  .registercls {
+    margin-top: 50px;
+  }
+}
+.userprof{
+  margin-top: 6.2em;
+                    /* margin-bottom: 25px; */
+                    position: relative;
+                    border: #000;
+                    border-width: 2px;
+                    animation: openaimation 1.5s forwards 0s ease;
+                    opacity: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .userprof {
+    margin-top: 50px;
+  }
+}
  
  .month td{
    text-align: center;
@@ -115,7 +160,20 @@ body {
                 /* bring your own prefixes */
                 transform: translate(-50%, -50%);
               }
-
+              @keyframes profilefadeout{
+                0%{
+                    opacity: 1;
+                    }
+                100%{
+                    transform: rotate(xx);
+                    opacity: 0;
+                    }
+            }
+            
+            .profilefade{
+                animation: profilefadeout 2s forwards 0s ease-out;
+            }
+             
             .cardbetter{
                 position: relative;
                     display: -ms-flexbox;
@@ -126,9 +184,6 @@ body {
                     word-wrap: break-word;
                     /* background-color: #fff; */
                     background-clip: border-box;
-                  
-                   
-                
                     border-radius: 0.25rem;
                     /* padding: 0px; */
                     padding-left: 50px;
@@ -137,6 +192,8 @@ body {
                     margin-top: 25px;
                     animation: openaimation 1.5s forwards 0s ease;
                     opacity: 0;
+                    
+
                 }
                 @keyframes openaimation{
                     0%{
@@ -157,8 +214,8 @@ body {
                     position: relative;
                     border: #000;
                     border-width: 2px;
-                    animation: openaimation 1.5s forwards 0s ease;
-                    opacity: 0;
+                    /* animation: openaimation 1.5s forwards 0s ease;
+                    opacity: 0; */
                 }
                
                 .openanimationc{
