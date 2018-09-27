@@ -87,6 +87,9 @@ function authfunc() {
 }
 //allow :active selector to work on mobile devices
 document.addEventListener("touchstart", function(){}, true)
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> b4c03069847ec2d0b454b8415f0820bc3f9bed84
