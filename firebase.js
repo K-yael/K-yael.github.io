@@ -86,4 +86,4 @@ function authfunc() {
   });
 }
 
-
+document.addEventListener("touchstart", function(){}, true)
