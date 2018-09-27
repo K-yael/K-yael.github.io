@@ -85,5 +85,5 @@ function authfunc() {
     }
   });
 }
-
+//allow :active selector to work on mobile devices
 document.addEventListener("touchstart", function(){}, true)
