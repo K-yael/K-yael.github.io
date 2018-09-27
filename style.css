@@ -388,7 +388,7 @@ body {
                 transition: 0.2s;
             
             }
-         .clickanamation:hover, .clickanamation:active{
+         .clickanamation:active{
                 opacity: .3;
                 
                 
