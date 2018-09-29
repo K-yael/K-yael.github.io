@@ -40,9 +40,17 @@
         initializeFirebase();
 
     </script>
-    <script>
+   <script>
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        //const userUID = user.uid;
+        // User is signed in.
+        //alert('welcome');
+        window.location.replace("index.html");
+      }
 
-    </script>
+    });
+  </script>
 </head>
 
 <body class="cover">
@@ -74,7 +82,7 @@
             <p style=" color: #f3f3f3; opacity: .6; font-size: 16px; font-weight: 100; margin-bottom: 0rem;">" הרים הגבוהים ליעלים, סלעים מחסה לשפנים "</p>
         </div>
         <div class="form-style openanimationc logincls" id="securediv" style="width: 250px; height: 200px;">
-           
+
 
             <input type="password" id="secure" class="form-control" style="text-align: right; margin-top: 20px;" onfocus="focusfunc()"
                 placeholder="סיסמת אבטחה" required="">
@@ -95,7 +103,7 @@
             <h1 style=" color: #E9EFF6; text-align: center;padding-bottom: 20px;">הרשם</h1>
 
             <input type="text" id="user" class="form-control" style="text-align: right; margin-top: 20px;" onfocus="focusfunc()" placeholder="שם משתמש"
-                required="" autofocus="">
+                required="">
 
             <input type="password" id="pass" class="form-control" style="text-align: right; margin-top: 20px;" onfocus="focusfunc()"
                 placeholder="סיסמה" required="">
@@ -124,8 +132,19 @@
             var pass = "5528";
             var passseq = document.getElementById('secure').value;
             if (pass == passseq) {
-                document.getElementById('onpassword').style.display = "block";
-                document.getElementById('securediv').style.display = "none";
+                document.getElementById("secure").style.border = "3px solid #28a745";
+                setTimeout(function () {
+                  
+                   
+                    document.getElementById("securediv").classList.remove("openanimationc");
+                    document.getElementById("securediv").classList.add("fadeout");
+
+                }, 700);
+                setTimeout(function () {
+                    document.getElementById('onpassword').style.display = "block";
+                   
+
+                }, 800);
                 // document.getElementById("user").style.border = "3px solid #dc3545";
 
             }

@@ -83,7 +83,7 @@ body {
   transform: translate(-50%, -50%);
   width: 250px;
    position: absolute; 
-   top: 50%;
+   top: 45%;
 }
 
 @media screen and (max-width: 320px) {
@@ -173,6 +173,9 @@ body {
             .profilefade{
                 animation: profilefadeout 2s forwards 0s ease-out;
             }
+            .fadeout{
+              animation: profilefadeout 0.2s forwards 0s ease-out;
+          }
              
             .cardbetter{
                 position: relative;
@@ -388,7 +391,7 @@ body {
                 transition: 0.2s;
             
             }
-         .clickanamation:active{
+            .clickanamation:hover, .clickanamation:active{
                 opacity: .3;
                 
                 

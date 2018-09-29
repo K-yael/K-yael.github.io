@@ -43,10 +43,14 @@
   <script>
     firebase.auth().onAuthStateChanged(function (user) {
       if (user) {
-        //const userUID = user.uid;
-        // User is signed in.
-        //alert('welcome');
-        window.location.replace("index.html");
+        greenalert("user");
+        greenalert("pass");
+
+        setTimeout(function () {
+
+          window.location.replace("index.html");
+
+        }, 500);
       }
 
     });
@@ -120,13 +124,19 @@
 
 </script>
 <script>
+  function clearborder(id) {
 
+    document.getElementById(id).style.border = "0px";
+
+  }
   function focusfunc() {
     if (document.getElementById('user').value == '' || document.getElementById("validation_notes").style.visibility == "visible") {
 
       document.getElementById("validation_notes").style.visibility = "hidden";
       document.getElementById('user').value = ''
       document.getElementById('pass').value = ''
+      clearborder("user");
+      clearborder("pass");
     }
   }
 </script>

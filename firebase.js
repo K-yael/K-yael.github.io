@@ -75,10 +75,13 @@ function authfunc() {
       // User is signed in.
       //alert('welcome');
       //  window.location.replace("Homepage.html");
+    
     }
     else {
 
       document.getElementById("validation_notes").style.visibility = "visible";
+      redalert("user");
+      redalert("pass");
      //window.location.replace("Login.html");
 
 
@@ -86,5 +89,18 @@ function authfunc() {
   });
 }
 
+        function redalert(id) {
+            
+            document.getElementById(id).style.border = "3px solid #dc3545";
+        }
+        function greenalert(id) {
+          document.getElementById(id).style.border = "3px solid #28a745";
+
+        }
+
+
+
+
+   
 //allow :active selector to work on mobile devices
 document.addEventListener("touchstart", function(){}, true)
