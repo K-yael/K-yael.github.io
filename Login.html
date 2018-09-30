@@ -86,8 +86,8 @@
       <h1 style=" color: #E9EFF6; display: inline-block;"> קריאת יעל</h1>
       <p style=" color: #f3f3f3; opacity: .6; font-size: 16px; font-weight: 100; margin-bottom: 0rem;">" הרים הגבוהים ליעלים, סלעים מחסה לשפנים "</p>
     </div>
-
-    <div class="form-style openanimationc logincls">
+    <div class="container logincls" >
+    <div class="form-style openanimationc">
 
       <!-- <div class="form-style" style="width: 250px; position: relative;transform: translate(-50%, -50%); left: 50%; margin-top: 50%;"> -->
 
@@ -100,8 +100,10 @@
         placeholder="סיסמה" required="">
 
       <button id="logInBtn" class="btn btn-lg btn-primary btn-block" style="margin-top: 26px; color: white">שלח</button>
-      <p class="centered" id="validation_notes" style="position: fixed; text-align: center; font-size: 20px; visibility: hidden; top: 115%; width: 200px; color: #E9EFF6;">שם משתמש או סיסמה אינם נכונים</p>
-
+      </div>
+      <div class="container" style="margin-top: 35px;">
+          <p id="validation_notes" style="text-align: center; font-size: 20px;color: #E9EFF6; display: none;">שם משתמש או סיסמה אינם נכונים</p>
+      </div>
 
 
     </div>
@@ -130,9 +132,9 @@
 
   }
   function focusfunc() {
-    if (document.getElementById('user').value == '' || document.getElementById("validation_notes").style.visibility == "visible") {
+    if (document.getElementById('user').value == '' || document.getElementById("validation_notes").style.display == "block") {
 
-      document.getElementById("validation_notes").style.visibility = "hidden";
+      document.getElementById("validation_notes").style.display = "none";
       document.getElementById('user').value = ''
       document.getElementById('pass').value = ''
       clearborder("user");

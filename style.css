@@ -77,18 +77,23 @@ body {
   background-color: #E9EFF6;
   
 }
-.logincls{
+/* .logincls{
   left: 50%;
-  /* bring your own prefixes */
+  
   transform: translate(-50%, -50%);
   width: 250px;
    position: absolute; 
    top: 50%;
+} */
+.logincls{
+  width: 300px;
+   margin-top:100px;
+    height: 100%;
 }
 
 @media screen and (max-width: 320px) {
   .logincls {
-    top: 55%;
+    margin-top:50px;
   }
 }
 .registercls{

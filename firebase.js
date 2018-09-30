@@ -79,7 +79,7 @@ function authfunc() {
     }
     else {
 
-      document.getElementById("validation_notes").style.visibility = "visible";
+      document.getElementById("validation_notes").style.display = "block";
       redalert("user");
       redalert("pass");
      //window.location.replace("Login.html");
