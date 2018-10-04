@@ -40,17 +40,7 @@
         initializeFirebase();
 
     </script>
-   <script>
-    firebase.auth().onAuthStateChanged(function (user) {
-      if (user) {
-        //const userUID = user.uid;
-        // User is signed in.
-        //alert('welcome');
-        window.location.replace("index.html");
-      }
-
-    });
-  </script>
+  
 </head>
 
 <body class="cover">
@@ -250,8 +240,13 @@
                     addUser(firebase.auth().currentUser.uid, "", "", "")
                         .then(function (userUID) {
                             document.getElementById('validation_notes').innerHTML = " נרשמת בהצלחה";
+                            setTimeout(function () {
+                  
+                   
+                                window.location.replace("userinfo.html");
 
-                            window.location.replace("userinfo.html");
+              }, 500);
+                            
                         })
 
                         .catch(function (error) {
