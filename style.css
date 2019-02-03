@@ -694,22 +694,3 @@ body {
     opacity: 1;
   }
 }
-.responsiv {
-  font-size: 26px; 
-  color: #c1dcffb8;
-   position: absolute;
-    right: 20px;
-     top: 5px;
-}
-@media screen and (min-width: 660px) {
-  .responsiv {
-    
-      right: 20%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .responsiv {
-    
-      right: 25%;
-  }
-}
